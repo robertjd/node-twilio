@@ -10,10 +10,6 @@
     "dependencies": {
         "express": ">= 2.0.0"
     },
-    "modules": {
-        "client": "./lib/twilio",
-        "twiml": "./lib/twiml"
-    },
     "main": "./lib",
     "engines": {"node" : ">=0.4.0"}
 }
