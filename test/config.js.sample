@@ -3,5 +3,5 @@ module.exports.Credentials = {
     authToken: 'dcXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     outgoingId: '+1XXXXXXXXX',
     testToNumber: '+XXXXXXXXXXX',
-    hostname: 'example.com'
+    base_url: 'http://www.example.com'
 };

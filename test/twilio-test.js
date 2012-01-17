@@ -1,7 +1,7 @@
 var Client = require('../lib').Client,
     Creds = require('./config').Credentials;
 
-var t = new Client(Creds.sid, Creds.authToken, Creds.hostname),
+var t = new Client(Creds.sid, Creds.authToken, Creds.base_url),
     p = t.getPhoneNumber('+18888238895');
 
 p.setup(function() {

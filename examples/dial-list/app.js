@@ -1,7 +1,7 @@
 var TwilioClient = require('../../lib').Client,
     Twiml = require('../../lib/').Twiml,
     creds = require('./config').Credentials,
-    client = new TwilioClient(creds.sid, creds.authToken, creds.hostname),
+    client = new TwilioClient(creds.sid, creds.authToken, creds.base_url),
     numbers = ['+18674451795', '+19058926737', '+18888238895'],
     message = 'Hey there! You are loved. We are on the side of damage, and you are loved.',
     totalToCall = numbers.length,

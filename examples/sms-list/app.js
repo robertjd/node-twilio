@@ -1,7 +1,7 @@
 var TwilioClient = require('../../lib').Client,
     Twiml = require('../../lib/').Twiml,
     creds = require('./config').Credentials,
-    client = new TwilioClient(creds.sid, creds.authToken, creds.hostname),
+    client = new TwilioClient(creds.sid, creds.authToken, creds.base_url),
     // Our numbers list. Add more numbers here and they'll get the message
     numbers = ['+18674451795'],
     message = 'WE DAMAGE WE',

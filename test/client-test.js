@@ -38,7 +38,7 @@ function t(test, expected, postTest) {
     };
 }
 
-var c = new Client(credentials.sid, credentials.authToken, {hostname: credentials.hostname});
+var c = new Client(credentials.sid, credentials.authToken, {base_url: credentials.base_url});
 
 //c.getAccountInfo(r('Get account credentials'));
 c.getAccountInfo(t('getAccountInfo', 

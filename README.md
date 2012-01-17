@@ -51,11 +51,11 @@ Then, you'd have to go out and ensure than UriForCallback is a real, provisioned
 
 First, we want to instantiate a new Twilo client object.
 The constructor takes three parameters: the account SID and auth token, as well as
-the hostname of the application server. (This is used to construct URIs to give Twilio.)
+the base_url of the application server. (This is used to construct URIs to give Twilio.)
 
     var sys = require('sys'),
         TwilioClient = require('twilio').Client,
-        client = new TwilioClient(ACCOUNT_SID, AUTH_TOKEN, MY_HOSTNAME);
+        client = new TwilioClient(ACCOUNT_SID, AUTH_TOKEN, MY_BASE_URL);
 
 Now that we have our client, let's get a PhoneNumber object using one of the 
 phone numbers that we've provisioned through some other channel.

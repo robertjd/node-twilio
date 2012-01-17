@@ -1,7 +1,7 @@
 var TwilioClient = require('../../lib').Client,
     Twiml = require('../../lib').Twiml,
     creds = require('./config').Credentials,
-    client = new TwilioClient(creds.sid, creds.authToken, creds.hostname),
+    client = new TwilioClient(creds.sid, creds.authToken, creds.base_url),
     questions = [
         {
             q: 'The population of Canada is roughly:', 
